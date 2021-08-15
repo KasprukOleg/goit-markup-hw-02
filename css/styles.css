@@ -102,7 +102,7 @@ color: var(--hero-text-color);
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-   
+    cursor: pointer;
 }
 
 /* Section priorities*/
@@ -170,4 +170,6 @@ color: var(--logo-color);
     .web {
         color: var(--accent-color);
       }
+
+
 
