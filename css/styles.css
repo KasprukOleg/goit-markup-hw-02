@@ -5,6 +5,7 @@
     --logo-color: #000000;
     --hero-text-color: #FFFFFF;
     --fon-color: #2F303A;
+    --fon-color-button: #f5f4fa;
 }
 
 body {
@@ -126,9 +127,6 @@ color: var(--hero-text-color);
   color: var(--logo-color);
   }
   
-.logo:hover  {
-    color: var(--accent-color);
-    }
     .web {
         color: var(--accent-color);
       }
@@ -164,12 +162,46 @@ line-height: 1.19;
 color: var(--logo-color);
 }
 
-.logo:hover  {
-    color: var(--accent-color);
-    }
     .web {
         color: var(--accent-color);
       }
 
+      /* site-nav portfolio */
 
+      .site-nav .link.current {
+        color: var(--accent-color);
+     }
+    
+/* Works */
 
+.filter-list .link.current {
+    color: var(--hero-text-color);
+    background-color: var(--accent-color);
+    width: 73px;
+    height: 38px;
+    left: 495px;
+    top: 174px;
+        }   
+
+.filter-list .link {
+    color: var(--title-text-color);
+    background-color: var(--fon-color-button);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+     }
+
+.list  {
+    color: var(--title-text-color);
+}
+
+.coment {
+    color: var(--primery-text-color);
+}
+
+.filter-list .link:hover,
+.filter-list .link:focus {
+    color: var(--accent-color);
+}
