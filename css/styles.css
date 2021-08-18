@@ -1,5 +1,6 @@
 :root {
     --primery-text-color: #757575;
+    --title-color: #E5E5E5;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --logo-color: #000000;
@@ -8,7 +9,7 @@
     --fon-color-button: #f5f4fa;
 }
 
-body {
+.body {
     background-color: #E5E5E5;
     color: #757575;
 }
@@ -41,6 +42,7 @@ color: var(--logo-color);
 .logo:hover  {
     color: var(--accent-color);
     }
+
     .web {
         color: var(--accent-color);
       }
@@ -71,9 +73,13 @@ line-height: 1.14;
     color: var(--accent-color);
 }
 
+.link {
+    text-decoration: none
+}
+
  /* Hero */
 
-.hero-title {
+.hero {
 font-family: Roboto;
 font-style: normal;
 font-weight: 900;
@@ -83,7 +89,9 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--hero-text-color);
+
 }
+
 
 .hero {
     background-color: var(--fon-color);
@@ -108,13 +116,33 @@ color: var(--hero-text-color);
 
 /* Section priorities*/
 
-.section-title {
+.section-priorities {
     color: var(--title-text-color);
 }
 
-.priorities-list .link {
+.priorities-list {
     color: var(--primery-text-color);
 }
+
+/* Works */
+
+.section-works {
+    color: var(--title-text-color);
+}
+
+/* Command */
+
+.section {
+    background-color: var(--fon-color-button);
+    }
+
+.section {
+    color: var(--title-text-color);
+    }
+
+.section-title {
+    color: var(--primery-text-color);
+}    
 
 /* Footer */
 
@@ -152,38 +180,20 @@ color: var(--hero-text-color);
      .fon {
          background-color: var(--fon-color);
              }
-
-         .logo {
-  font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-color: var(--logo-color);
-}
-
-    .web {
-        color: var(--accent-color);
-      }
-
-      /* site-nav portfolio */
-
-      .site-nav .link.current {
-        color: var(--accent-color);
-     }
+    .contact {
+        text-decoration: none
+            }
     
-/* Works */
+     /* Portfolio */
+ 
+/* Filter */
 
-.filter-list .link.current {
+.filter .current {
     color: var(--hero-text-color);
     background-color: var(--accent-color);
-    width: 73px;
-    height: 38px;
-    left: 495px;
-    top: 174px;
-        }   
+     }   
 
-.filter-list .link {
+.filter-list {
     color: var(--title-text-color);
     background-color: var(--fon-color-button);
     font-family: Roboto;
@@ -192,6 +202,17 @@ color: var(--logo-color);
     font-size: 16px;
     line-height: 1.62;
      }
+     
+ .filter {
+    background-color: var(--fon-color-button);
+     }
+
+.filter .filter-button:hover,
+.filter .filter-button :focus {
+    background-color: var(--accent-color);
+    }
+
+/* Work */
 
 .list  {
     color: var(--title-text-color);
@@ -199,9 +220,4 @@ color: var(--logo-color);
 
 .coment {
     color: var(--primery-text-color);
-}
-
-.filter-list .link:hover,
-.filter-list .link:focus {
-    color: var(--accent-color);
 }
