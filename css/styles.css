@@ -7,6 +7,7 @@
     --hero-text-color: #FFFFFF;
     --fon-color: #2F303A;
     --fon-color-button: #f5f4fa;
+    --fon-knob: #188ce8; 
 }
 
 .body {
@@ -97,7 +98,7 @@ line-height: 16px;
 
  /* Hero */
 
-.hero {
+.hero-title {
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -116,21 +117,28 @@ line-height: 16px;
  
 /* Button */
 
-.button {
-    color: var(--hero-text-color);
-    background-color: var(--accent-color);
+.button-link {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 30px;
-width: 200px;
-height: 50px;
-left: 700px;
-top: 430px;
+    letter-spacing: 0.06em;
+    width: 200px;
+    height: 50px;
+    left: 700px;
+    top: 430px;
     cursor: pointer;
 }
-
+.button-link {
+    background-color: var(--fon-knob);
+    color: var(--hero-text-color);
+     }
+.button-link:hover,
+.button-link:focus {
+ background-color: var(--accent-color);
+ color: var(--hero-text-color);
+    }
 /* Section priorities*/
 
 .priorities-list {
@@ -164,6 +172,7 @@ color: var(--primery-color);
 
 .priorities-list-title {
     list-style: none;
+    text-transform: none;
     }  
 
 /* Works */
@@ -192,13 +201,26 @@ font-weight: bold;
 font-size: 36px;
 line-height: 42px;
 letter-spacing: 0.03em;
+color: var(--title-text-colors);
     }
 
 .section {
-    color: var(--title-text-colors);
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+ color: var(--title-text-colors);
     }
 
 .section-title {
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
     color: var(--primery-color);
 }    
 
@@ -251,8 +273,12 @@ letter-spacing: 0.03em;
          background-color: var(--fon-color);
              }
     .contact {
-        text-decoration: none
+        text-decoration: none;
             }
+
+    .contact-list {
+        list-style-type: none;
+    }
     
      /* Portfolio */
  
@@ -278,11 +304,7 @@ letter-spacing: 0.03em;
     letter-spacing: 0.02em;
      }
      
- .filter {
-    background-color: var(--fon-color-button);
-     }
-
-.filter .filter-button:hover,
+ .filter .filter-button:hover,
 .filter .filter-button :focus {
     background-color: var(--accent-color);
     color: var(--hero-text-color);
@@ -294,10 +316,23 @@ letter-spacing: 0.03em;
 
 /* Work */
 
-.list  {
-    color: var(--title-text-colors);
+
+.heading {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 36px;
+letter-spacing: 0.06em;
+color: var(--title-text-colors);
 }
 
 .coment {
-    color: var(--primery-color);
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0.03em;
+color: var(--primery-color);
 }
