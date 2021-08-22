@@ -231,8 +231,13 @@ color: var(--primery-color);
     font-weight: bold;
     font-size: 26px;
     line-height: 31px;
+    letter-spacing: 0.03em;
   color: var(--hero-text-color);
   }
+
+  .logo-item {
+    font-family: 'Raleway', sans-serif;
+      }
   
     .web {
         color: var(--accent-color);
